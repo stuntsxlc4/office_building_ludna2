@@ -3,6 +3,9 @@ import './App.scss';
 import Home from "./pages/Home";
 import Office from "./pages/Office";
 import Info from "./pages/Info";
+import Location from "./pages/Location";
+import Amenities from "./pages/Amenities";
+import Discover from "./pages/Discover";
 
 function App() {
   return (
@@ -16,6 +19,15 @@ function App() {
               </Route>
               <Route path="/info">
                   <Info />
+              </Route>
+              <Route path="/location">
+                  <Location />
+              </Route>
+              <Route path="/amenities">
+                  <Amenities />
+              </Route>
+              <Route path="/discover">
+                  <Discover />
               </Route>
           </Switch>
       </Router>

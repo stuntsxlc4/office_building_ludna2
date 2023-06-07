@@ -15,6 +15,22 @@ html, body, #root {
 
   &__col {
     width: calc(100% / 3);
+
+    &--left {
+      background-image: url("assets/img_2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--right {
+      background-image: url("assets/img.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--middle {
+      background-image: url("assets/img_1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }
 
@@ -24,9 +40,42 @@ html, body, #root {
 
   &__content {
     width: 60%;
+    background: #333;
+    color: #eee;
+    position: relative;
+  }
+
+  &__logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+  &__text {
+    padding: 50px 20px 20px 20px;
   }
 
   &__navigation {
     width: 40%;
+    height: 100%;
+
+    background: url("assets/img_1.png") no-repeat,
+    rgba(0,0,0, 0.4);
+    background-size: cover;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 20px;
+  }
+
+  &__list-item {
+    margin-bottom: 20px;
+    font-size: 25px;
   }
 }
