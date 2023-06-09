@@ -23,6 +23,9 @@ const InfoPage = ({children}) => {
                 <li className="infoPage__list-item">
                     <Link to="/discover">Discover Ludna 2</Link>
                 </li>
+                <li className="infoPage__list-item">
+                    <Link to="/contact">Contact</Link>
+                </li>
             </ul>
         </nav>
     </div>

@@ -40,8 +40,8 @@ html, body, #root {
 
   &__content {
     width: 60%;
-    background: #333;
-    color: #eee;
+    background: lightslategrey;
+    color: white;
     position: relative;
   }
 
@@ -63,8 +63,6 @@ html, body, #root {
     rgba(0,0,0, 0.4);
     background-size: cover;
 
-    color: white;
-
     display: flex;
     align-items: center;
   }
@@ -77,5 +75,51 @@ html, body, #root {
   &__list-item {
     margin-bottom: 20px;
     font-size: 25px;
+    a {
+      color: green;
+      text-decoration: none;
+    }
+
   }
+}
+$primary-color: #FFDEAD;
+$secondary-color: #6c757d;
+
+h1 {
+  color: $primary-color;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: $secondary-color;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: darken($primary-color, 10%);
 }

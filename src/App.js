@@ -6,6 +6,10 @@ import Info from "./pages/Info";
 import Location from "./pages/Location";
 import Amenities from "./pages/Amenities";
 import Discover from "./pages/Discover";
+import Contact from "./pages/Contact";
+
+
+
 
 function App() {
   return (
@@ -28,6 +32,9 @@ function App() {
               </Route>
               <Route path="/discover">
                   <Discover />
+              </Route>
+              <Route path="/contact">
+                  <Contact />
               </Route>
           </Switch>
       </Router>
