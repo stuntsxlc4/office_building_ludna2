@@ -21,7 +21,7 @@ const InfoPage = ({children}) => {
                     <Link to="/amenities">Amenities</Link>
                 </li>
                 <li className="infoPage__list-item">
-                    <Link to="/discover">Discover Ludna 2</Link>
+                    <Link to="/discover">Galery</Link>
                 </li>
                 <li className="infoPage__list-item">
                     <Link to="/contact">Contact</Link>

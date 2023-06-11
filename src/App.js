@@ -5,7 +5,7 @@ import Office from "./pages/Office";
 import Info from "./pages/Info";
 import Location from "./pages/Location";
 import Amenities from "./pages/Amenities";
-import Discover from "./pages/Discover";
+import Galery from "./pages/Galery";
 import Contact from "./pages/Contact";
 
 
@@ -31,7 +31,7 @@ function App() {
                   <Amenities />
               </Route>
               <Route path="/discover">
-                  <Discover />
+                  <Galery />
               </Route>
               <Route path="/contact">
                   <Contact />
