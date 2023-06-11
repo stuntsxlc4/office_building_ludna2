@@ -5,7 +5,7 @@ const Office = () => {
     return <InfoPage>
         <>
             <h1>Offices</h1>
-            <p>The Bridge oferuje 47 000 m2 powierzchni przyjaznej dla każdego biznesu. Otwarta przestrzeń pozwala na szereg możliwości aranżacji biura.</p>
+            <p>Ludna 2 oferuje 47 000 m2 powierzchni przyjaznej dla każdego biznesu. Otwarta przestrzeń pozwala na szereg możliwości aranżacji biura.</p>
 
             <ol>
                 <li>174 m wysokości</li>

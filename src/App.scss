@@ -18,21 +18,36 @@ html, body, #root {
 
     &--left {
       background-image: url("assets/img_2.png");
+      justify-content: center;
+      align-items: center;
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center;
     }
     &--right {
-      background-image: url("assets/img.png");
+      background-image: url("assets/img_1.png");
+      justify-content: center;
+      align-items: center;
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center;
     }
     &--middle {
-      background-image: url("assets/img_1.png");
+      background-image: url("assets/img.png");
+      justify-content: center;
+      align-items: center;
       background-repeat: no-repeat;
       background-size: cover;
+      background-position: center;
     }
   }
 }
+.home__col--middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .infoPage {
   height: 100%;
@@ -123,3 +138,4 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: darken($primary-color, 10%);
 }
+

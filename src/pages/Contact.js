@@ -18,10 +18,9 @@ const Contact = () => {
 
                 <input type="submit" value="Wyślij"/>
 
-
-
             </form>
 
+            <p>Ludna 2 00-406 Warszawa</p>
 
 
 
