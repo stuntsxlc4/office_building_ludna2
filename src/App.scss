@@ -1,5 +1,7 @@
+@import 'scss/home';
+
 * {
-  border: 1px solid red;
+  //border: 1px solid red;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,44 +11,7 @@ html, body, #root {
   height: 100%;
 }
 
-.home {
-  display: flex;
-  height: 100%;
 
-  &__col {
-    width: calc(100% / 3);
-
-    &--left {
-      background-image: url("assets/img_2.png");
-      justify-content: center;
-      align-items: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-    &--right {
-      background-image: url("assets/img_1.png");
-      justify-content: center;
-      align-items: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-    &--middle {
-      background-image: url("assets/img.png");
-      justify-content: center;
-      align-items: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-  }
-}
-.home__col--middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 
 .infoPage {
@@ -68,15 +33,18 @@ html, body, #root {
 
   &__text {
     padding: 50px 20px 20px 20px;
+    position: relative;
+    z-index: 2;
   }
 
   &__navigation {
     width: 40%;
     height: 100%;
 
-    background: url("assets/img_1.png") no-repeat,
-    rgba(0,0,0, 0.4);
-    background-size: cover;
+    //background: url("assets/img_1.png") no-repeat,
+    //rgba(0,0,0, 0.4);
+    //background-size: cover;
+    background: #011031;
 
     display: flex;
     align-items: center;
@@ -84,14 +52,16 @@ html, body, #root {
 
   &__list {
     list-style: none;
-    padding: 20px;
+    padding: 40px;
+
   }
 
   &__list-item {
     margin-bottom: 20px;
     font-size: 25px;
+
     a {
-      color: green;
+      color: #eee;
       text-decoration: none;
     }
 
@@ -139,3 +109,26 @@ input[type="submit"]:hover {
   background-color: darken($primary-color, 10%);
 }
 
+.link-menu {
+  margin: 15px;
+  display: block;
+  position: relative;
+  z-index: 5;
+}
+
+
+.officePage {
+  background: url('assets/img.png');
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 0;
+    background: rgba(0,0,0,0.5);
+  }
+}

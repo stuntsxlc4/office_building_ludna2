@@ -1,8 +1,7 @@
 import InfoPage from "../components/InfoPage";
 
 const Office = () => {
-
-    return <InfoPage>
+    return <InfoPage styles="officePage">
         <>
             <h1>Offices</h1>
             <p>Ludna 2 oferuje 47 000 m2 powierzchni przyjaznej dla każdego biznesu. Otwarta przestrzeń pozwala na szereg możliwości aranżacji biura.</p>

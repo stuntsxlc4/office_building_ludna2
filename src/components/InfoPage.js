@@ -1,9 +1,12 @@
 import {Link} from "react-router-dom";
+import Logo from "../assets/logo.png";
 
-const InfoPage = ({children}) => {
+const InfoPage = ({children, styles}) => {
     return <div className="infoPage">
-        <div className="infoPage__content">
-            <Link className="infoPage__logo" to="/">Ludna 2</Link>
+        <div className={`infoPage__content ${styles}`}>
+            <Link to="/" className="link-menu">
+                <img src={Logo} width={80} alt="Logo Ludna 2" className="logo"/>
+            </Link>
             <div className="infoPage__text">{children}</div>
         </div>
         <nav className="infoPage__navigation">
