@@ -12,12 +12,13 @@ const Gallery = () => {
         <>
             <h1>Gallery</h1>
 
-            <div>
-                <img src={photo1} alt="" width="200px"/>
-                <img src={photo2} alt="" width="200px"/>
-                <img src={photo3} alt="" width="200px"/>
-                <img src={photo4} alt="" width="200px"/>
-                <img src={photo5} alt="" width="200px"/>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px' }}>
+                <img src={photo1} alt="" width="30%"/>
+                <img src={photo2} alt="" width="30%"/>
+                <img src={photo3} alt="" width="30%"/>
+                <img src={photo4} alt="" width="30%"/>
+                <img src={photo5} alt="" width="30%"/>
+                <img src={photo5} alt="" width="30%"/>
             </div>
           </>
     </InfoPage>
