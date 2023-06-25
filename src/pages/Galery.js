@@ -18,7 +18,7 @@ const Gallery = () => {
                 <img src={photo3} alt="" width="30%"/>
                 <img src={photo4} alt="" width="30%"/>
                 <img src={photo5} alt="" width="30%"/>
-                <img src={photo5} alt="" width="30%"/>
+
             </div>
           </>
     </InfoPage>
